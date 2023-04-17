@@ -1,0 +1,230 @@
+body{
+    font-family:'Monserrat', sans-serif;
+    overflow-x: hidden;
+}
+/*menu*/
+#menu li > a{
+    font-size:18px;
+    font-weight:bold;
+}
+
+#menu  form > button{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Ajustes generales del carrusel */
+.carousel {
+    position: relative;
+    }
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+
+    .carousel-item-next.carousel-item-left,
+    .carousel-item-prev.carousel-item-right {
+        transform: translateX(25%);
+    }
+
+    .carousel-item-next,
+    .active.carousel-item-right,
+    .carousel-item-prev,
+    .active.carousel-item-left {
+        transform: translateX(0);
+    }
+}
+
+/* Controles */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    filter: invert(1) grayscale(100%);
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="%23FFF" d="M5.25 0l-4 4 4 4h2.5v-1.5h-1.5l-3.5-3.5 3.5-3.5h1.5v-1.5z"/></svg>');
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="%23FFF" d="M2.75 0v1.5h1.5l3.5 3.5-3.5 3.5h-1.5v1.5h2.5l4-4-4-4z"/></svg>');
+}
+
+@media (min-width: 768px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: auto;
+        height: auto;
+    opacity: 0.5;
+        transition: opacity 0.15s ease;
+}
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+    opacity: 1;
+}
+}
+
+    .carousel-inner {
+                height: 500px;
+            }
+        
+            .carousel-item {
+                height: 500px;
+            }
+        
+            .carousel-item img {
+                height: 500px;
+                object-fit: cover;
+            }
+        
+            .carousel-caption {
+                bottom: 10%;
+                z-index: 1;
+            }
+        
+            .carousel-caption h5 {
+                font-size: 3rem;
+            }
+        
+            .carousel-caption p {
+                font-size: 1.5rem;
+            }
+        
+            .carousel-indicators {
+                bottom: 5%;
+            }
+        
+            .carousel-indicators button {
+                background-color: #fff;
+                border: none;
+                border-radius: 50%;
+                height: 15px;
+                margin-right: 10px;
+                width: 15px;
+            }
+
+
+/* Mision y Vision  */
+@media (max-with:768px){
+    #intro {
+width: 90% !important;
+    }
+}
+#intro {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 2rem;
+    padding: 1rem;
+    border-top: 3px solid #000;
+}
+
+#intro p {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #intro h1 {
+        font-size: 1.5rem;
+}
+
+    #intro p {
+        font-size: 1rem;
+}
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.col-md-6 {
+    text-align: center;
+}
+
+h2 {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+}
+#ofrecemos {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+#ofrecemos.in {
+    max-height: 500px;
+    /* Establece la altura máxima deseada para el acordeón */
+}
+.custom-accordion {
+    width: 1000px;
+    margin: 0 auto;
+    /* Otros estilos personalizados */
+}
